@@ -12,6 +12,7 @@ users.users.gordy = {
        cine
        discord
        devenv
+       deja-dup
        flameshot
        gimp3
        inkscape
