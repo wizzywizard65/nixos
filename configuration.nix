@@ -33,7 +33,7 @@
  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
  
-  virtualisation.docker.enable = true;  
+ # virtualisation.docker.enable = true;  
   
 
   networking.hostName = "nixos"; # Define your hostname.
