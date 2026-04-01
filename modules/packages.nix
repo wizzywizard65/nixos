@@ -10,7 +10,7 @@ users.users.gordy = {
        brave
        chromium
        cine
-       claude-code
+       codex
        discord
        devenv
        deja-dup
