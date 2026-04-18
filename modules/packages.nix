@@ -10,10 +10,8 @@ users.users.gordy = {
        brave
        chromium
        cine
-       codex
        discord
        devenv
-       deja-dup
        flameshot
        gimp3
        inkscape
@@ -27,6 +25,11 @@ users.users.gordy = {
        gnome-extension-manager
        fastfetch
        starship
+# cockpit
+       cockpit
+       cockpit-files
+       cockpit-podman
+       cockpit-machines
 #  utilities 
        mission-center
 #     inputs.helix.packages."${pkgs.system}".helix
