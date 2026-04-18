@@ -28,4 +28,16 @@ services.desktopManager.gnome.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
  };
+
+services.cockpit = {
+  enable = true;
+  port = 9090;
+  openFirewall = true; # Please see the comments section
+  settings = {
+    WebService = {
+      AllowUnencrypted = true;
+    };
+  };
+};
+
 }
