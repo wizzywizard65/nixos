@@ -13,7 +13,7 @@ users.users.gordy = {
        discord
        devenv
        flameshot
-       gimp3
+       gimp-with-plugins
        inkscape
        podman-desktop
        distrobox
