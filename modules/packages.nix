@@ -26,6 +26,8 @@ users.users.gordy = {
        fastfetch
        starship
        nixfmt
+       deja-dup
+       direnv
 # cockpit
        cockpit
        cockpit-files
