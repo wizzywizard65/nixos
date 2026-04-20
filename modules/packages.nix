@@ -25,6 +25,7 @@ users.users.gordy = {
        gnome-extension-manager
        fastfetch
        starship
+       nixfmt
 # cockpit
        cockpit
        cockpit-files
