@@ -17,6 +17,8 @@ users.users.gordy = {
        gimp-with-plugins
        inkscape
        podman-desktop
+       podman-compose
+       kubectl
        distrobox
        distroshelf
        ptyxis
