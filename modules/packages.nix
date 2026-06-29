@@ -12,6 +12,7 @@ users.users.gordy = {
        cine
        discord
        devenv
+       emacs
        element-desktop
        flameshot
        gimp-with-plugins
