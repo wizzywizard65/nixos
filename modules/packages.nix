@@ -4,7 +4,7 @@
 users.users.gordy = {
     isNormalUser = true;
     description = "Gordon Campbell";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
     packages = with pkgs; [
     #  thunderbird
        brave
@@ -39,6 +39,8 @@ users.users.gordy = {
        cockpit-machines
 #  utilities 
        mission-center
+       virt-manager
+       virt-viewer
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
 #      inputs.kcl-language-server.packages."${pkgs.system}".kcl-language-server
