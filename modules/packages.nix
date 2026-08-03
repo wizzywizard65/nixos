@@ -43,6 +43,7 @@ users.users.gordy = {
        virt-viewer
        qemu     
        mousam
+       btop
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
 #      inputs.kcl-language-server.packages."${pkgs.system}".kcl-language-server
