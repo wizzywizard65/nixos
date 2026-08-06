@@ -31,7 +31,7 @@ users.users.gordy = {
        nixfmt
        deja-dup
        direnv
-       weechat
+       
 # cockpit
        cockpit
        cockpit-files
