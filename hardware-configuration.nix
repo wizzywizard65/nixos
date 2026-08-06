@@ -4,36 +4,30 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
-    ];
+  imports = [ ];
 
-  boot.initrd.availableKernelModules = [ "ehci_pci" "ahci" "xhci_pci" "usbhid" "usb_storage" "sd_mod" "sr_mod" "sdhci_pci" ];
+  boot.initrd.availableKernelModules = [ "uhci_hcd" "xhci_pci" "ehci_pci" "ata_piix" "ahci" "sd_mod" "sr_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-intel" ];
+  boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/dc2a4381-6ed9-4901-a984-032d37522d9b";
-      fsType = "btrfs";
-    };
-
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/dc2a4381-6ed9-4901-a984-032d37522d9b";
-      fsType = "btrfs";
-      options = [ "subvol=home" ];
-    };
-
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/dc2a4381-6ed9-4901-a984-032d37522d9b";
-      fsType = "btrfs";
-      options = [ "subvol=nix" ];
+    { device = "/dev/disk/by-uuid/4bc4ca5b-5c65-4267-b93a-27ab69b049f4";
+      fsType = "ext4";
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/eb619e8f-3501-4363-8869-5e4a2da0cec9"; }
+    [ { device = "/dev/disk/by-uuid/03be801b-939b-4e08-b65e-38e94e69b85f"; }
     ];
 
+  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
+  # (the default) this is the recommended approach. When using systemd-networkd it's
+  # still possible to use this option, but it's recommended to use it in conjunction
+  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
+  networking.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp0s5.useDHCP = lib.mkDefault true;
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.parallels.enable = true;
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "prl-tools" ];
 }

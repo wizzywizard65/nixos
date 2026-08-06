@@ -3,11 +3,18 @@
 
 {
 
-  virtualisation.docker.enable = true;  
   virtualisation.podman = {
    enable = true;
    autoPrune.enable = true;
+   dockerCompat = true;
+
   };
+  
+  virtualisation.containers.enable = true;
+  virtualisation.containers.registries.search = [
+    "docker.io"
+    "ghcr.io"
+  ];
   
   # 2. Enable the timer explicitly
   systemd.timers."podman-auto-update" = {
@@ -17,4 +24,5 @@
       Persistent = true;
     };
   };
+ 
 }

@@ -39,6 +39,7 @@ users.users.gordy = {
        cockpit-machines
 #  utilities 
        mission-center
+       mousam
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
 #      inputs.kcl-language-server.packages."${pkgs.system}".kcl-language-server
