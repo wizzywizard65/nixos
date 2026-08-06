@@ -27,7 +27,11 @@
   nix.gc = {
     automatic = true;
     dates = "12:15"; # Example: Run daily at 3:15 AM
+<<<<<<< HEAD
     options = "--delete-older-than 7d"; # Keep generations from the last 30 days
+=======
+    options = "--delete-older-than 7d"; # Keep generations from the last 7 days
+>>>>>>> 3a9a3c21bc3a0cdbd3c1c848d0887aced61a33ec
   };
  
  
