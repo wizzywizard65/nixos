@@ -48,6 +48,7 @@ users.users.gordy = {
        qemu     
        mousam
        btop
+       dive
 
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
