@@ -49,7 +49,7 @@ users.users.gordy = {
        mousam
        btop
        dive
-
+       #inputs.flox.packages."${pkgs.stdenv.hostPlatform.system}".flox
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
 #      inputs.kcl-language-server.packages."${pkgs.system}".kcl-language-server
