@@ -32,6 +32,7 @@ users.users.gordy = {
        deja-dup
        direnv
        weechat
+       cliamp
        
 # cockpit
        cockpit
