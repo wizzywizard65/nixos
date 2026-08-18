@@ -7,8 +7,6 @@ users.users.gordy = {
     extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
     packages = with pkgs; [
     #  thunderbird
-       brave
-       chromium
        cine
        discord
        devenv
