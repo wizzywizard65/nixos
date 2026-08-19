@@ -31,6 +31,7 @@ users.users.gordy = {
        direnv
        weechat
        cliamp
+       tuner
        
 # cockpit
        cockpit
