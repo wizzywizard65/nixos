@@ -57,6 +57,7 @@ users.users.gordy = {
       gnomeExtensions.blur-my-shell
       gnomeExtensions.dash-to-dock
       gnomeExtensions.caffeine
+      gnomeExtensions.gtile
 
 
 
