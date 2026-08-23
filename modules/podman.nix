@@ -29,7 +29,13 @@
       };
      };
     };
-  
+  systemd.services."podman-auto-update" = {
+  serviceConfig = {
+    Type = "oneshot";
+    ExecStart = "${pkgs.podman}/bin/podman auto-update";
+  };
+};
+systemd.timers."podman-auto-update".wantedBy = [ "timers.target" ];
   
   
  
