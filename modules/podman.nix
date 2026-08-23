@@ -20,13 +20,17 @@
   
   # 2. Enable the timer explicitly
   systemd.timers."podman-auto-update" = {
-    wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnCalendar = "daily";
-      Persistent = true;
+  enable = true;
+  description = "Periodic Podman container auto-update";
+  wantedBy = [ "timers.target" ];
+  timerConfig = {
+    OnCalendar = "daily";
+    Persistent = true;
+      };
+     };
     };
-  };
-  };
+  
+  
   
  
 
