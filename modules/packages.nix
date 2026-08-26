@@ -4,7 +4,7 @@
 users.users.gordy = {
     isNormalUser = true;
     description = "Gordon Campbell";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "wireshark"];
     packages = with pkgs; [
     #  thunderbird
        chromium
@@ -41,7 +41,7 @@ users.users.gordy = {
        cockpit-machines
 #  utilities 
        mission-center
-
+       wireshark
        mousam
 #    virtualisation
        virt-manager
@@ -63,5 +63,6 @@ users.users.gordy = {
 
 
     ];
+  
  };
 }
