@@ -33,6 +33,7 @@ users.users.gordy = {
        weechat
        cliamp
        tuner
+       ffmpeg-full
        
 # cockpit
        cockpit
