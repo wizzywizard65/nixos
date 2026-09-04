@@ -27,7 +27,7 @@
   nix.gc = {
     automatic = true;
     dates = "12:15"; # Example: Run daily at 
-    options = "--delete-older-than 1w";
+    options = "--delete-older-than 7d";
   };
  
  
