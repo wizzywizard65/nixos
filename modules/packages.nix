@@ -34,6 +34,7 @@ users.users.gordy = {
        cliamp
        tuner
        ffmpeg-full
+       vlc
        
 # cockpit
        cockpit
