@@ -14,24 +14,24 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/b5648851-4cca-42d2-9228-388b14d2b0a9";
+    { device = "/dev/disk/by-uuid/26d6a068-9658-46de-8e22-ff196b8ec1bb";
       fsType = "btrfs";
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/b5648851-4cca-42d2-9228-388b14d2b0a9";
+    { device = "/dev/disk/by-uuid/26d6a068-9658-46de-8e22-ff196b8ec1bb";
       fsType = "btrfs";
       options = [ "subvol=home" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/b5648851-4cca-42d2-9228-388b14d2b0a9";
+    { device = "/dev/disk/by-uuid/26d6a068-9658-46de-8e22-ff196b8ec1bb";
       fsType = "btrfs";
       options = [ "subvol=nix" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/8ce37cf0-8645-4811-9354-18b767fe2197"; }
+    [ { device = "/dev/disk/by-uuid/aae1793e-5dea-46ac-aa5e-cde8cfafa2d3"; }
     ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
