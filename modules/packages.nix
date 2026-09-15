@@ -62,6 +62,7 @@ users.users.gordy = {
       gnomeExtensions.caffeine
       gnomeExtensions.gtile
 
+  
 
 
     ];
