@@ -89,6 +89,9 @@
   # wireshark
   programs.wireshark.enable = true;
   programs.wireshark.dumpcap.enable = true;
+
+  programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
   
 
   # Enable touchpad support (enabled default in most desktopManager).

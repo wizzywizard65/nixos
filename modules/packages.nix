@@ -29,7 +29,6 @@ users.users.gordy = {
        starship
        nixfmt
        deja-dup
-       direnv
        weechat
        cliamp
        tuner
@@ -66,6 +65,6 @@ users.users.gordy = {
 
 
     ];
-  
+
  };
 }
