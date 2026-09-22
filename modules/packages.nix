@@ -31,7 +31,7 @@ users.users.gordy = {
        deja-dup
        weechat
        cliamp
-       tuner
+       shortwave
        ffmpeg-full
        vlc
        
