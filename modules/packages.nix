@@ -44,11 +44,11 @@ users.users.gordy = {
        mission-center
        wireshark
        mousam
+       obsidian
 #    virtualisation
        virt-manager
        virt-viewer
        qemu     
-       mousam
        btop
        dive
        #inputs.flox.packages."${pkgs.stdenv.hostPlatform.system}".flox
