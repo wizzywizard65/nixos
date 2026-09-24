@@ -8,30 +8,30 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "ehci_pci" "ahci" "xhci_pci" "usbhid" "usb_storage" "sd_mod" "sr_mod" "sdhci_pci" ];
+  boot.initrd.availableKernelModules = [ "ehci_pci" "ahci" "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sr_mod" "sdhci_pci" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/f6d102a9-17f9-4f2a-a6da-686154713713";
+    { device = "/dev/disk/by-uuid/2497f6d7-9868-4777-8f48-86828a61d84a";
       fsType = "btrfs";
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/f6d102a9-17f9-4f2a-a6da-686154713713";
+    { device = "/dev/disk/by-uuid/2497f6d7-9868-4777-8f48-86828a61d84a";
       fsType = "btrfs";
       options = [ "subvol=home" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/f6d102a9-17f9-4f2a-a6da-686154713713";
+    { device = "/dev/disk/by-uuid/2497f6d7-9868-4777-8f48-86828a61d84a";
       fsType = "btrfs";
       options = [ "subvol=nix" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/838ce3ca-eef4-4882-b705-70244825a4b8"; }
+    [ { device = "/dev/disk/by-uuid/531c9a9e-632e-4702-81e6-6d75a8e2570a"; }
     ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
