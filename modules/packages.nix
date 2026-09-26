@@ -45,6 +45,7 @@ users.users.gordy = {
        wireshark
        mousam
        obsidian
+       dysk
 #    virtualisation
        virt-manager
        virt-viewer
