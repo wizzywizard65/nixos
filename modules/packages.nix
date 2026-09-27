@@ -46,6 +46,7 @@ users.users.gordy = {
        mousam
        obsidian
        dysk
+       ramalama
 #    virtualisation
        virt-manager
        virt-viewer
