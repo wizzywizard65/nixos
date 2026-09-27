@@ -34,7 +34,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
  
  # virtualisation.docker.enable = true;  
-  
+  boot.kernel.sysctl."net.ipv4.ip_unprivileged_port_start" = 80;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
