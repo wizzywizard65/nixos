@@ -34,6 +34,7 @@ users.users.gordy = {
        shortwave
        ffmpeg-full
        vlc
+       mpv
        
 # cockpit
        cockpit
