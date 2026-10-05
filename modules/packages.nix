@@ -54,6 +54,8 @@ users.users.gordy = {
        qemu     
        btop
        dive
+       skopeo
+       buildah
        #inputs.flox.packages."${pkgs.stdenv.hostPlatform.system}".flox
 #     inputs.helix.packages."${pkgs.system}".helix
 #      inputs.zoo.packages."${pkgs.system}".zoo
