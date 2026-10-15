@@ -6,7 +6,7 @@ users.users.gordy = {
     description = "Gordon Campbell";
     extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "wireshark"];
     packages = with pkgs; [
-    #  thunderbird
+       bat    
        chromium
        cine
        discord
