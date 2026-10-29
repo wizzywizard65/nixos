@@ -48,6 +48,7 @@ users.users.gordy = {
        obsidian
        dysk
        ramalama
+       nix-template
 #    virtualisation
        virt-manager
        virt-viewer
